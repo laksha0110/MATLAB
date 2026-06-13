@@ -3,9 +3,7 @@
 
 The Nyquist-Shannon Sampling Theorem states that a continuous-time signal can be perfectly reconstructed from its samples if the sampling frequency is at least twice the highest frequency component of the signal:
 
-\[
-f_s \geq 2f_{max}
-\]
+fs > 2fmax
 
 This minimum sampling frequency is known as the **Nyquist rate**. When the theorem is satisfied, the original signal can be accurately reconstructed using sinc interpolation. If the sampling frequency is lower than the Nyquist rate, **aliasing** occurs, causing different frequency components to become indistinguishable and resulting in signal distortion.
 
