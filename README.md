@@ -70,8 +70,8 @@ This demonstrates why FFT algorithms are preferred in practical signal processin
 <table>
 <tr>
 <td align="center">
-</table><img width="1612" height="435" alt="DFT_profile" src="https://github.com/user-attachments/assets/fe057f04-09d2-404e-a6bf-33c0b5f90167" />
-<img width="1780" height="222" alt="DFT_values" src="https://github.com/user-attachments/assets/ebf6f04f-b78b-472b-99ad-10b58cf79ded" /><img width="1780" height="222" alt="DFT_values" src="https://github.com/user-attachments/assets/e31cf088-ce86-4123-ae9e-6c947fe38155" /><br>
+</table>
+<img width="1780" height="222" alt="DFT_values" src="https://github.com/user-attachments/assets/ebf6f04f-b78b-472b-99ad-10b58cf79ded" /><br>
 </td>
 
 <td align="center">
