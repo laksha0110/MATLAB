@@ -1,5 +1,5 @@
 
-## Theory
+## Theory - Signal reconstruction
 
 The Nyquist-Shannon Sampling Theorem states that a continuous-time signal can be perfectly reconstructed from its samples if the sampling frequency is at least twice the highest frequency component of the signal:
 
@@ -27,3 +27,55 @@ When the sampling frequency is lower than the Nyquist rate, aliasing occurs. Hig
 <p align="center">
  <img width="1046" height="642" alt="notsuccessful" src="https://github.com/user-attachments/assets/a0c5d22d-9b45-42f7-92e3-559d76011386" />
 </p>
+
+
+
+
+# Discrete Fourier Transform (DFT) Implementation in MATLAB
+
+## Overview
+
+This project implements the Discrete Fourier Transform (DFT) from its mathematical definition without using MATLAB's built-in `fft()` function. The implementation is optimized using vectorized matrix operations and its performance is compared against MATLAB's FFT algorithm.
+
+## Theory
+
+The Discrete Fourier Transform (DFT) converts a discrete-time signal from the time domain into its frequency-domain representation. It is defined as:
+
+X[k] = Σ x[n] · exp(-j2πkn/N)
+
+where:
+- `x[n]` is the input signal
+- `X[k]` is the DFT output
+- `N` is the signal length
+- `j` is the imaginary unit
+
+The DFT allows the frequency content of a signal to be analyzed and serves as the foundation for many digital signal processing applications.
+
+## Objectives
+
+- Implement the DFT directly from its mathematical definition.
+- Verify correctness by comparing the output with MATLAB's `fft()` function.
+- Optimize the implementation using vectorization.
+- Compare the runtime performance of the custom DFT and MATLAB's FFT.
+
+## Results
+
+The custom DFT implementation produces the same frequency-domain representation as MATLAB's `fft()` for test signals. Runtime measurements performed on a signal containing 10,000 samples show that MATLAB's FFT is significantly faster due to its lower computational complexity.
+
+- DFT Complexity: O(N²)
+- FFT Complexity: O(N log N)
+
+This demonstrates why FFT algorithms are preferred in practical signal processing applications.
+
+## Key Concepts
+
+- Discrete Fourier Transform (DFT)
+- Fast Fourier Transform (FFT)
+- Frequency-Domain Analysis
+- Vectorization
+- Computational Complexity
+- MATLAB Optimization
+
+## Conclusion
+
+This project demonstrates the implementation of the DFT from first principles and highlights the computational advantages of the FFT. While the DFT provides insight into the mathematical foundations of frequency analysis, the FFT enables efficient processing of large signals.
