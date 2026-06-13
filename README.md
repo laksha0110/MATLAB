@@ -13,7 +13,7 @@ This project investigates the effects of different sampling frequencies on a con
 
 ### Sampling Theorem Satisfied
 
-When the sampling frequency is greater than or equal to twice the highest frequency component of the signal, the Nyquist criterion is satisfied. In this case, the sampled signal contains sufficient information to accurately reconstruct the original signal using sinc interpolation. The reconstructed signal closely matches the original waveform.
+When the sampling frequency is greater than twice the highest frequency component of the signal, the Nyquist criterion is satisfied. In this case, the sampled signal(n < 25) contains sufficient information to accurately reconstruct the original signal using sinc interpolation. The reconstructed signal closely matches the original waveform.
 
 <p align="center">
  <img width="1056" height="622" alt="success" src="https://github.com/user-attachments/assets/7f350e2e-8b4f-4782-a763-941fe3016ee2" />
@@ -22,7 +22,7 @@ When the sampling frequency is greater than or equal to twice the highest freque
 
 ### Sampling Theorem Violated
 
-When the sampling frequency is lower than the Nyquist rate, aliasing occurs. High-frequency components are incorrectly represented as lower frequencies, resulting in information loss. Consequently, the reconstructed signal differs significantly from the original signal and accurate recovery is no longer possible.
+When the sampling frequency is lower than the Nyquist rate, aliasing occurs. High-frequency components are incorrectly represented as lower frequencies, resulting in information loss (n ≥ 25). Consequently, the reconstructed signal differs significantly from the original signal and accurate recovery is no longer possible.
 
 <p align="center">
  <img width="1046" height="642" alt="notsuccessful" src="https://github.com/user-attachments/assets/a0c5d22d-9b45-42f7-92e3-559d76011386" />
