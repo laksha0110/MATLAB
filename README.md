@@ -93,3 +93,29 @@ This demonstrates why FFT algorithms are preferred in practical signal processin
 ## Conclusion
 
 This project demonstrates the implementation of the DFT from first principles and highlights the computational advantages of the FFT. While the DFT provides insight into the mathematical foundations of frequency analysis, the FFT enables efficient processing of large signals.
+
+## Dual Tone (DTMF)
+
+## Overview
+This task analyzes and generates Dual Tone Multi-Frequency (DTMF) signals used in telephone keypads. The audio signal is examined in both the time and frequency domains, and a MATLAB function is implemented to generate DTMF tones for any sequence of digits. :contentReference[oaicite:0]{index=0}
+
+## Tasks
+- Load and play the provided DTMF audio file.
+- Plot the signal in the time domain.
+- Compute and plot its frequency spectrum.
+- Implement a DTMF generator using:
+  - Sampling frequency: **8 kHz**
+  - Tone duration: **75 ms**
+  - Pause between digits: **30 ms**
+- Generate and analyze the DTMF signal for a custom phone number.
+
+  ## Matlab output
+  ## Output for given audio file
+  <img width="991" height="607" alt="output1" src="https://github.com/user-attachments/assets/6d87b151-02f6-436a-810b-5802dc72f942" />
+  
+  ## Output for a custom phone number
+  <img width="961" height="607" alt="output2" src="https://github.com/user-attachments/assets/429116a0-7191-4b4e-b54e-8b5c13b164be" />
+
+
+## Conclusion
+The generated DTMF signals correctly represent each digit as the sum of two sinusoidal frequencies. The time- and frequency-domain plots confirm the expected DTMF characteristics and demonstrate the application of the Fourier Transform in signal analysis. 
